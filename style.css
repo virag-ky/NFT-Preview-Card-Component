@@ -78,14 +78,26 @@ div#days span {
   color: hsl(215, 51%, 70%);
 }
 
-div#days span:hover {
-  cursor: pointer;
-  color: hsl(178, 100%, 50%);
-}
-
 div#creator-div {
   display: flex;
   align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+img#profile {
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+span#creator-name {
+  color: white;
+}
+
+span#creator-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 
 .attribution {
