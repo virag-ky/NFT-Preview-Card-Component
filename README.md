@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![nft-card](https://user-images.githubusercontent.com/79658534/153713721-9d68e7f0-6f20-4534-97d2-7f7059a1978b.png)
+
 
 ### Links
 
