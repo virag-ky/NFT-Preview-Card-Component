@@ -30,10 +30,31 @@ img#main-image {
   display: block;
   margin: auto;
   border-radius: 15px;
+  opacity: 1;
+  transition: 0.5s ease;
 }
 
-img#main-image:hover {
+#image-container:hover img#main-image {
   cursor: pointer;
+  opacity: 0.3;
+}
+
+div#effect {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+img#view {
+  width: 100px;
+}
+
+#image-container:hover div#effect {
+  opacity: 1;
 }
 
 h1 {
