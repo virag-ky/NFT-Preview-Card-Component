@@ -1,6 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main#container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+div#info {
+  width: 350px;
+}
+
+img#main-image {
+  width: 350px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+img#main-image:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  font-size: 26px;
+  padding: 20px 0;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+div#info-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+div#ethereum-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+div#ethereum-count span {
+  color: hsl(178, 100%, 50%);
+}
+
+div#days {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+div#days span {
+  color: hsl(215, 51%, 70%);
+}
+
+div#days span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+div#creator-div {
+  display: flex;
+  align-items: center;
+}
+
 .attribution {
-  font-size: 11px;
   text-align: center;
+  line-height: 24px;
+  color: white;
+  margin-top: 20px;
 }
 
 .attribution a {
