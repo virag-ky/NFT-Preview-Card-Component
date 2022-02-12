@@ -15,15 +15,21 @@ body {
   height: 100vh;
 }
 
+/* Container */
+
 main#container {
   background-color: hsl(216, 50%, 16%);
   padding: 25px;
   border-radius: 20px;
 }
 
+/* Info */
+
 div#info {
   width: 350px;
 }
+
+/* Main image */
 
 img#main-image {
   width: 350px;
@@ -32,32 +38,41 @@ img#main-image {
   border-radius: 15px;
   opacity: 1;
   transition: 0.5s ease;
+  float: left;
 }
 
 #image-container:hover img#main-image {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 div#effect {
   opacity: 0;
   transition: 0.5s ease;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  border-radius: 15px;
+  height: 350px;
 }
 
 img#view {
   width: 100px;
+  position: relative;
+  top: -60%;
+  left: 38%;
+}
+
+div#image-container {
+  height: 350px;
 }
 
 #image-container:hover div#effect {
   opacity: 1;
+  background-color: hsla(178, 100%, 50%, 0.2);
 }
 
+/* Main content-info */
+
 h1 {
+  clear: left;
   color: white;
   font-size: 26px;
   padding: 20px 0;
@@ -121,6 +136,8 @@ span#creator-name:hover {
   color: hsl(178, 100%, 50%);
 }
 
+/* Footer */
+
 .attribution {
   text-align: center;
   line-height: 24px;
@@ -130,4 +147,78 @@ span#creator-name:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media query for mobile devices */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  div#image-container {
+    height: 280px;
+  }
+
+  img#main-image {
+    width: 280px;
+  }
+
+  div#effect {
+    height: 280px;
+  }
+
+  img#view {
+    position: relative;
+    top: -70%;
+    left: 35%;
+  }
+
+  div#info {
+    width: 280px;
+  }
+
+  .attribution {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  img#profile {
+    width: 30px;
+  }
+}
+
+@media (max-width: 280px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  div#image-container {
+    height: 250px;
+  }
+
+  img#main-image {
+    width: 250px;
+  }
+
+  div#effect {
+    height: 250px;
+  }
+
+  img#view {
+    position: relative;
+    left: 30%;
+  }
+
+  main#container {
+    padding: 10px;
+  }
+
+  div#info {
+    width: 250px;
+  }
 }
